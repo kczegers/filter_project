@@ -28,11 +28,14 @@
   <body class="container">
     <!-- YOUR CONTENT GOES HERE -->
     <h1>How much does your county<br>contribute to mass incarceration?</h1>
-    <div class="article">
-      <!-- <img src="img/jail.jpg"></img> -->
-      <!-- <figcaption>Credit: Michael Haindfield/Creative Commons</figcaption> -->
-      <p>Lorem ipsum dolor amet normcore affogato cardigan, tacos forage edison bulb selvage lyft dreamcatcher schlitz. Actually sartorial vice, af enamel pin intelligentsia normcore. Tote bag franzen flexitarian, roof party poke offal kombucha
-        schlitz vinyl ramps shabby chic salvia. Adaptogen neutra tattooed squid, four loko tbh dreamcatcher activated charcoal bicycle rights lumbersexual live-edge edison bulb. Everyday carry green juice jianbing wayfarers seitan cray.</p>
+    <!-- Graph from datawrapper -->
+
+    <iframe title="New York State's Incarcerated Population [1970-2016]" aria-label="Interactive line chart" src="https://datawrapper.dwcdn.net/NTh2y/1/" scrolling="no" frameborder="0" width="653" height="385"></iframe>
+
+    <!-- <img src="img/jail.jpg"></img> -->
+    <!-- <figcaption>Credit: Michael Haindfield/Creative Commons</figcaption> -->
+    <p>Lorem ipsum dolor amet normcore affogato cardigan, tacos forage edison bulb selvage lyft dreamcatcher schlitz. Actually sartorial vice, af enamel pin intelligentsia normcore. Tote bag franzen flexitarian, roof party poke offal kombucha
+      schlitz vinyl ramps shabby chic salvia. Adaptogen neutra tattooed squid, four loko tbh dreamcatcher activated charcoal bicycle rights lumbersexual live-edge edison bulb. Everyday carry green juice jianbing wayfarers seitan cray.</p>
 
     </div>
 
@@ -46,20 +49,20 @@
     <div id="info">
       <!-- templating occurs here -->
       <script type="text/html" id="place_template">
-        <p >You selected <strong><%= place.county %></strong></p>
-      <p >Total incarcerated population: <strong><%= place.total_pop %></strong>.</p>
-      <p >Black population: <strong><%= place.black_pop_15to64 %></strong></p>
-      <p >White population: <strong><%= place.white_pop_15to64 %></strong></p>
-      <p >Latino population: <strong><%= place.latino_pop_15to64 %></strong></p>
-      <p >Male population: <strong><%= place.male_pop_15to64 %></strong></p>
-      <p >Female population: <strong><%= place.female_pop_15to64 %></strong></p>
-        </script>
+        <p>You selected <strong><%= place.county %></strong></p>
+        <p>Total incarcerated population: <strong><%= place.total_pop %></strong>.</p>
+        <p>Black population: <strong><%= place.black_pop_15to64 %></strong></p>
+        <p>White population: <strong><%= place.white_pop_15to64 %></strong></p>
+        <p>Latino population: <strong><%= place.latino_pop_15to64 %></strong></p>
+        <p>Male population: <strong><%= place.male_pop_15to64 %></strong></p>
+        <p>Female population: <strong><%= place.female_pop_15to64 %></strong></p>
+      </script>
 
     </div>
 
     <script type="text/html" id="select_template">
       <option value="<%= county %>"><%= county %></option>
-        </script>
+    </script>
 
     <p>Hexagon pug fingerstache twee kinfolk four dollar toast food truck. Tumeric tattooed locavore four loko echo park meh health goth cold-pressed bicycle rights. Freegan vaporware succulents selfies, swag sriracha shaman. Photo booth seitan
       next level pabst, YOLO retro fanny pack poutine succulents quinoa pinterest master cleanse. Green juice selfies prism austin.</p>

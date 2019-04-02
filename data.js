@@ -338,7 +338,7 @@ let data = [
 		"white_pop_15to64": "1,894,037"
   },
 	{
-		"county ": "Niagara County",
+		"county": "Niagara County",
 		"total_pop": "212,540",
 		"total_pop_15to64": "139,772",
 		"female_pop_15to64": "70,518",

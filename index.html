@@ -26,7 +26,8 @@
 
   <body class="container">
     <!-- YOUR CONTENT GOES HERE -->
-    <h1>How much does your county contribute to mass incarceration?</h1>
+    <h1>How much does your county contribute to <br> mass incarceration?</h1>
+
     <div class="article">
       <img src="img/jail.jpg"></img>
       <figcaption>Credit: Michael Haindfield/Creative Commons</figcaption>
@@ -45,18 +46,18 @@
     <div id="info"></div>
     <!-- templating occurs here -->
     <script type="text/html" id="place_template">
-      <p >You selected <strong><%= place.county %></strong></p>
-      <p >Total incarcerated population: <strong><%= place.total_pop %></strong>.</p>
-      <p >Black population: <strong><%= place.black_pop_15to64 %></strong></p>
-      <p >White population: <strong><%= place.white_pop_15to64 %></strong></p>
-      <p >Latino population: <strong><%= place.latino_pop_15to64 %></strong></p>
-      <p >Male population: <strong><%= place.male_pop_15to64 %></strong></p>
-      <p >Female population: <strong><%= place.female_pop_15to64 %></strong></p>
-        </script>
+      <p>You selected <strong><%= place.county %></strong></p>
+      <p>Total incarcerated population: <strong><%= place.total_pop %></strong>.</p>
+      <p>Black population: <strong><%= place.black_pop_15to64 %></strong></p>
+      <p>White population: <strong><%= place.white_pop_15to64 %></strong></p>
+      <p>Latino population: <strong><%= place.latino_pop_15to64 %></strong></p>
+      <p>Male population: <strong><%= place.male_pop_15to64 %></strong></p>
+      <p>Female population: <strong><%= place.female_pop_15to64 %></strong></p>
+    </script>
 
     <script type="text/html" id="select_template">
       <option value="<%= county %>"><%= county %></option>
-        </script>
+    </script>
 
     <p>Hexagon pug fingerstache twee kinfolk four dollar toast food truck. Tumeric tattooed locavore four loko echo park meh health goth cold-pressed bicycle rights. Freegan vaporware succulents selfies, swag sriracha shaman. Photo booth seitan
       next level pabst, YOLO retro fanny pack poutine succulents quinoa pinterest master cleanse. Green juice selfies prism austin.</p>

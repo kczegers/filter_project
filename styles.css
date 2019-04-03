@@ -20,8 +20,9 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
 .container {
     padding: 10px;
-    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
+    display: block;
 }
 
 html, body {
@@ -35,6 +36,10 @@ h1, h2 {
     font-family: 'Merriweather';
 }
 
+h1 {
+    font-size:
+}
+
 img {
     display: block;
     margin: 0 auto;
@@ -45,12 +50,11 @@ iframe {
     margin: 0 auto;
 }
 
-figcaption {
+/* figcaption {
     text-align: center;
     font-style: italic;
     color: #7F7E7F;
-}
-
+} */
 p {
     line-height: 1.5em;
 }
@@ -72,8 +76,12 @@ strong {
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
 @media(min-width: 681px) {
+
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .container {
+        max-width: 500px;
+    }
 }
 
 /*********************************************************************

@@ -30,7 +30,7 @@
     <h1>How much does your county<br>contribute to mass incarceration?</h1>
     <!-- Graph from datawrapper -->
 
-    <iframe title="New York State's Incarcerated Population [1970-2016]" aria-label="Interactive line chart" src="https://datawrapper.dwcdn.net/NTh2y/1/" scrolling="no" frameborder="0" width="653" height="385"></iframe>
+    <!-- <iframe title="New York State's Incarcerated Population [1970-2016]" aria-label="Interactive line chart" src="https://datawrapper.dwcdn.net/NTh2y/1/" scrolling="no" frameborder="0" width="653" height="385"></iframe> -->
 
     <!-- <img src="img/jail.jpg"></img> -->
     <!-- <figcaption>Credit: Michael Haindfield/Creative Commons</figcaption> -->
@@ -50,12 +50,10 @@
       <!-- templating occurs here -->
       <script type="text/html" id="place_template">
         <p>You selected <strong><%= place.county %></strong></p>
-        <p>Total incarcerated population: <strong><%= place.total_pop %></strong>.</p>
-        <p>Black population: <strong><%= place.black_pop_15to64 %></strong></p>
-        <p>White population: <strong><%= place.white_pop_15to64 %></strong></p>
-        <p>Latino population: <strong><%= place.latino_pop_15to64 %></strong></p>
-        <p>Male population: <strong><%= place.male_pop_15to64 %></strong></p>
-        <p>Female population: <strong><%= place.female_pop_15to64 %></strong></p>
+        <p>Total county population: <strong><%= place.total_pop %></strong>.</p>
+
+
+
       </script>
 
     </div>
